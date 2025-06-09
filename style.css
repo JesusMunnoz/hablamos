@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* font-family: 'DM Sans', sans-serif; */
+}
+
+html, body {
+  height: 100%;
+}
+
+hr {
+  margin-bottom: 50px;
+}
+/* -- NAVBAR --*/
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+}
+.navbar .navbar-container{
+  padding: 20px;
+}
+
+.navbar .navbar-container .title-container {
+  font-size: 4.9rem;
+}
+
+.navbar .navbar-container .title-container .nav-title {
+  font-size: 4.9rem;
+}
+
+.navbar .navbar-container .nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .navbar-container .nav-list .navbar-nav .nav-item .nav-link {
+  font-size: 1.6rem;
+}
+
+/* -- HOME --*/
+
+.section-home {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-home .container .first-div h1 {
+  font-size: 5rem;
+}
+
+.section-home .container .first-div .p-one {
+  font-size: 2rem;
+}
+
+.section-home .container .first-div .p-two {
+  font-size: 1.8rem;
+}
+
+.section-home .container .second-div .list-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.section-home .container .second-div li {
+  font-size: 1.6rem;
+}
+
+.section-home .container .second-div .container-btn .btn {
+  font-size: 2rem;
+}
+
+/* -- CARDS --*/
+
+.section-cards {
+  padding: 30px;
+}
+
+.section-cards .container-cards {
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+}
+
+.section-cards .container-cards .card-body h5 {
+  font-size: 2rem;
+}
+
+.section-cards .container-cards .card-body p {
+  font-size: 1.6rem;
+}
+
+/* -- WHY --*/
+
+.section-why {
+  padding: 30px 0;
+}
+
+.section-why .container .first-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-why h1 {
+  font-size: 4rem;
+}
+
+.section-why .container .first-div .p-one {
+  font-size: 2rem;
+}
+
+.section-why p.lead {
+  font-size: 2rem;
+}
+
+.section-why .container .second-div .img-chat {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* -- FOUND --*/
+
+.section-found {
+  padding: 30px 0;
+  width: 100%;
+}
+.section-found .container{
+  width: 100%;
+  padding: 30px 0;
+}
+
+.section-found h1 {
+  font-size: 4rem;
+}
+
+.section-found p.lead {
+  font-size: 2rem;
+}
+
+.section-found .img-chat {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .section-found h1 {
+    font-size: 2.25rem;
+  }
+
+  .section-found .img-chat, .section-why .img-chat{
+    max-width: 300px;
+  }
+}
+
+.section-contact {
+  padding: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.footer h1 {
+  font-size: 4.9rem;
+}
+
+@media (max-width: 500px) {
+
+  .navbar .navbar-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .navbar-container .nav-list{
+    width: 80%;
+  } 
+  .navbar .navbar-container .nav-list .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .section-home {
+    width: 100%;
+    padding: 0;
+  }
+  .section-home .container {
+    width: 100%;
+  }
+  .section-home .container .first-div {
+    width: 100%;
+  }
+  .section-home .container .first-div h1{
+    font-size: 3rem;
+  }
+  .section-home .container .first-div .p-one, .section-home .container .first-div .p-two{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .section-cards .container-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section-why{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .section-why .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-why .container .first-div {
+    width: 100%;
+    padding: 25px;
+  }
+  .section-why .container .first-div .lead{
+    font-size: 1.5rem;
+  }
+
+
+  .section-found{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .section-found .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-found .container .first-div {
+    width: 100%;
+    padding: 25px;
+  }
+  .section-found .container .first-div .lead{
+    font-size: 1.5rem;
+  }
+  
+}

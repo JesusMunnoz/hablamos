@@ -1,0 +1,218 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+html{
+  font-size: 62.5%;
+  /*font-family: 'DM Sans', sans-serif;*/
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-title {
+  font-size: 4.9rem;
+  margin-left: 20px;
+  margin-bottom: 0; /* evita que h1 cree espacio extra */
+}
+
+.navbar-link .nav-link {
+  font-size: 1.6rem;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-link .nav-link:hover {
+  text-decoration: underline;
+}
+
+.section-email {
+  flex: 1; /* Ocupará el espacio disponible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
+.section-email .container .first-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section-email .container .first-div h1 {
+  font-size: 5rem;
+}
+
+.section-email .container .first-div .p-one {
+  font-size: 2rem;
+}
+
+.section-email .container .first-div .p-two {
+  font-size: 1.8rem;
+}
+
+.section-email .container .second-div {
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.section-email .container .second-div .img-chat {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  
+  h1{
+    font-size: 4.9rem;
+  }
+}
+
+@media (width >= 470px) and (width <= 1200px) {
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar{
+    height: 100px;
+    width: 100%;
+  }
+  .navbar .navbar-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .navbar .navbar-container .nav-title{
+    font-size: 3.9rem;
+    margin: 0;
+  }
+  .navbar .navbar-container .nav-link{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section-email .container .first-div h1{
+    font-size: 4rem;
+  }
+
+  .section-email .container .second-div .img-chat{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar{
+    height: 100px;
+    width: 100%;
+    
+  }
+  .navbar .navbar-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .navbar .navbar-container .nav-title{
+    font-size: 3.9rem;
+    margin: 0;
+  }
+  .navbar .navbar-container .nav-link{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer{
+    height: 100px;
+  }
+  .footer h1{
+    font-size: 3.9rem;
+  }
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .section-email .container .first-div h1{
+    font-size: 2.5rem;
+  }
+
+  .section-email .container .first-div h1{
+    font-size: 2.5rem;
+  }
+
+  .section-email .container .second-div .img-chat{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+}
